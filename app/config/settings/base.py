@@ -25,6 +25,7 @@ SECRET_DIR = os.path.join(ROOT_DIR, '.secrets')
 secrets = json.load(open(os.path.join(SECRET_DIR, 'base.json')))
 SECRET_KEY = secrets['SECRET_KEY']
 
+
 # Application definition
 
 INSTALLED_APPS = [
