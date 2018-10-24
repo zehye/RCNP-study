@@ -1,0 +1,12 @@
+FROM            eb-docker-study:base
+MAINTAINER      zehye.01@gmail.com
+
+
+ENV             BUILD_MODE                  local
+ENV             DJANGO_SETTGINS_MODULE      config.settings.${BUILD_MODE}
+
+
+COPY            .   /srv/project
+
+WORKDIR         /srv/project/app
+CMD             python manage.py runserver 0:8000
