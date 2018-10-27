@@ -32,7 +32,7 @@ def get_mode():
                 mode = MODES[mode_index]
                 break
             except IndexError:
-                print('1 ~ 2번을 입력하세요')
+                print('1 ~ 4번을 입력하세요')
     return mode
 
 
