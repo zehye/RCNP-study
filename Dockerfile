@@ -28,6 +28,8 @@ RUN             cp -f   /srv/project/.config/${BUILD_MODE}/nginx.conf \
 # supervisor설정 복사
 RUN             cp -f   /srv/project/.config/${BUILD_MODE}/supervisor.conf \
                         /etc/supervisor/conf.d/
+#7000 포트 open
+EXPOSE          7000
 
 # supervisord실행
 CMD             supervisord -n
